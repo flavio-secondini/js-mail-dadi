@@ -12,8 +12,8 @@ for (var i = 0; i < listaMail.length; i++) {
   }
 }
 
-if (spia = false) {
-  console.log("non corrisponde");
+if (spia) {
+  document.getElementById("responso").innerHTML = ("Corrisponde");
 } else {
-  console.log("corrisponde");
+  document.getElementById("responso").innerHTML = ("Non corrisponde");
 }
