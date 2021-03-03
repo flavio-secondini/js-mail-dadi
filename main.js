@@ -17,3 +17,25 @@ if (spia) {
 } else {
   document.getElementById("responso").innerHTML = ("Non corrisponde");
 }
+
+// DADI
+
+var pc = Math.floor(Math.random() * 6) + 1;
+
+var utente = Math.floor(Math.random() * 6) + 1;
+
+console.log(pc);
+
+console.log(utente);
+
+var risultato;
+
+if (pc > utente) {
+  risultato = ("Hai perso");
+} else if (utente > pc) {
+  risultato = ("Hai vinto");
+} else {
+  risultato = ("Pareggio");
+}
+
+document.getElementById("risultato").innerHTML = risultato;
